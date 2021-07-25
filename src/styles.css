@@ -12,3 +12,7 @@ h1{
 .btn{
     padding: 5px !important;
 }
+
+.btn-brown{
+    background-color: brown !important;
+}
