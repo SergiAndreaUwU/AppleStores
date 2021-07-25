@@ -7,7 +7,7 @@ import {Fruit} from '../models/fruit';
   providedIn: 'root'
 })
 export class FruitService {
-  API_URI='http://localhost:3000/api'
+  API_URI='http://localhost:4000/api'
   constructor(private http:HttpClient) {}
 
     

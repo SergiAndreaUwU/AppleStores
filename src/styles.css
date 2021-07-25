@@ -4,6 +4,6 @@ header {
     background-color: crimson;
 }
 
-red{
-    background-color: red;
+h1{
+    user-select: none;
 }

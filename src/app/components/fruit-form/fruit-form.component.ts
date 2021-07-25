@@ -7,8 +7,7 @@ import {FruitService} from '../../services/fruit.service';
 
 @Component({
   selector: 'app-fruit-form',
-  templateUrl: './fruit-form.component.html',
-  styleUrls: ['./fruit-form.component.css']
+  templateUrl: './fruit-form.component.html'
 })
 export class FruitFormComponent implements OnInit {
 
