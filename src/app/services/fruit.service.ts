@@ -28,7 +28,8 @@ export class FruitService {
     }
 
     updateFruit(id: string|number, updatedFruit: IFruit) {
-      return this.http.put(`${this.API_URI}/fruits/${id}`, updatedFruit);
+      console.log(updatedFruit)
+      return this.http.patch(`${this.API_URI}/fruits/${id}`, updatedFruit);
     }
 
    

@@ -1,0 +1,20 @@
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "description"
+    "price"
+    ;
+}
+
+.card-grid > p:first-child{
+    grid-area: description;
+    height: 8vh;
+
+}
+
+.card-grid > p:last-child{
+    grid-area: price;
+    justify-self: end;
+}

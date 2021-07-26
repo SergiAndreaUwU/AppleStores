@@ -10,7 +10,6 @@ import { FruitService } from "../../services/fruit.service";
   templateUrl: "./fruit-form.component.html",
 })
 export class FruitFormComponent implements OnInit {
-  @HostBinding("class") classes = "row";
 
   fruit: IFruit = {
     id: 0,

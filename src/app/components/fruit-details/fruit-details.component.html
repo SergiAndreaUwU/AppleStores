@@ -20,9 +20,12 @@
     style="border-right: 2px solid black; border-left: 2px solid black;"
     
     src="{{ fruit.image }}" class="card-img-top" />
-    <div class="card-body" style="height: 120px; border: 2px solid black; border-top: 0px;">
+    <div class="card-body card-grid" style="height: 120px; border: 2px solid black; border-top: 0px;">
       <p>
         {{ fruit.description }}
+      </p>
+      <p>
+        ${{fruit.price}}
       </p>
     </div>
   </div>
