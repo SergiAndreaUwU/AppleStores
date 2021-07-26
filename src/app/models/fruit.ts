@@ -1,4 +1,4 @@
-export interface Fruit{
+export interface IFruit{
     id?:number;
     title?:string;
     description?:string;

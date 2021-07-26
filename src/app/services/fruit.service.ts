@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import {Fruit} from '../models/fruit';
+import {IFruit} from '../models/fruit';
 
 @Injectable({
   providedIn: 'root'
@@ -23,11 +23,11 @@ export class FruitService {
       return this.http.delete(`${this.API_URI}/fruits/${id}`);
     }
   
-    saveFruit(fruit: Fruit) {
+    saveFruit(fruit: IFruit) {
       return this.http.post(`${this.API_URI}/fruits`, fruit);
     }
 
-    updateFruit(id: string|number, updatedFruit: Fruit) {
+    updateFruit(id: string|number, updatedFruit: IFruit) {
       return this.http.put(`${this.API_URI}/fruits/${id}`, updatedFruit);
     }
 
