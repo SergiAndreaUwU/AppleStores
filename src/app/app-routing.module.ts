@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import {FruitDetails} from "./components/fruit-details/fruit-details.component";
+
 import {FruitListComponent} from './components/fruit-list/fruit-list.component';
 
 import {FruitFormComponent} from './components/fruit-form/fruit-form.component';
@@ -15,7 +17,11 @@ const routes: Routes = [
 },
 {
   path:'fruits',
-  component: FruitListComponent
+  component: FruitDetails,
+},
+{
+  path:'fruits/edit',
+  component: FruitListComponent,
 },
 {
   path:'fruits/add',

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 import {FruitService} from '../../services/fruit.service';
 
@@ -13,7 +12,7 @@ export class FruitListComponent implements OnInit {
  
   fruits: any=[];
 
-  constructor(private fruitService: FruitService, private router:Router) { }
+  constructor(private fruitService: FruitService) { }
 
   ngOnInit() {
     this.getFruits(); 

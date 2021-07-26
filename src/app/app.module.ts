@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { FruitFormComponent } from './components/fruit-form/fruit-form.component';
 import { FruitListComponent } from './components/fruit-list/fruit-list.component';
+import { FruitDetails } from './components/fruit-details/fruit-details.component';
 
 import {FruitService} from './services/fruit.service';
 import { IndexComponent } from './components/index/index.component';
@@ -22,7 +23,8 @@ import { IndexComponent } from './components/index/index.component';
     NavigationComponent,
     FruitFormComponent,
     FruitListComponent,
-    IndexComponent
+    IndexComponent,
+    FruitDetails
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
 <div class="float-right">
-  <a class="btn btn-link" href="http://localhost:3001/" role="button"
+  <!-- <a class="btn btn-link" href="http://localhost:3001/" role="button"
     >Contact Us</a
-  >
-  <a class="btn btn-danger" routerLink="/fruits" role="button">Login</a>
+  > -->
+  <a class="btn btn-danger" [routerLink]="['/fruits/edit']" role="button">Login</a>
 </div>
 <br />
 
-<div style="border: 2px solid; margin-top: 10vh">
+<div style="margin-top: 30px">
   <div *ngFor="let button of buttonList" class="dropdown dropdown-inline">
     <button
       class="btn btn-{{ button.variant }} dropdown-toggle"
@@ -22,9 +22,9 @@
       <div class="dropdown-divider"></div>
 
       <li *ngFor="let fruit of button.fruitList">
-        <a class="dropdown-item" href="#">{{ fruit.fruitName }}</a>
+        <a class="dropdown-item" [routerLink]="['/fruits', {category:fruit.fruitName}]" >{{ fruit.fruitName }}</a>
       </li>
-      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item">Action</a></li>
     </ul>
   </div>
 </div>

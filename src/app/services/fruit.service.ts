@@ -12,7 +12,7 @@ export class FruitService {
 
     
     getFruits() {
-      return this.http.get(`${this.API_URI}/fruits`);
+      return this.http.get<any[]>(`${this.API_URI}/fruits`);
     }
   
     getFruit(id: string) {
